@@ -16,3 +16,17 @@ img{
     justify-content: space-evenly;
     gap:50px;
 }
+
+@media only screen and (max-width:600px){
+    #fruList, #vegList{
+        flex-direction: column;
+    }
+   
+}
+
+@media only screen and (min-width:601px) and (max-width:1000px){
+    #fruList, #vegList{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}

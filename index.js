@@ -1,11 +1,9 @@
-
 //1. Change the background color to silver
 document.body.style.backgroundColor = 'silver';
 
 //2. Change the font color for h1 title tag to green
-const title = document.getElementById('title')
+const title = document.getElementById('title');
 title.style.color = 'green';
-title.style.fontSize = '50px';
 
 //3. Change the font case for h3 title tags touppercase
 const heading = document.querySelectorAll('h3');
@@ -50,7 +48,7 @@ vegImg.addEventListener('mouseleave', function(e) {
 //Additional styling
 document.getElementById('text').style.fontWeight = 'bold';
 document.body.style.justifyItems = 'center';
-document.body.style.lineHeight = 3;
+document.body.style.lineHeight = 2.5;
 const list = document.getElementsByClassName('list');
 for (i of list){
     i.style.listStyleType = 'none';
