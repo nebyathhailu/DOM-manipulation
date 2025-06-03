@@ -3,11 +3,16 @@
 document.body.style.backgroundColor = 'silver';
 
 //2. Change the font color for h1 title tag to green
-document.getElementById('title').style.color = 'green';
+const title = document.getElementById('title')
+title.style.color = 'green';
+title.style.fontSize = '50px';
 
 //3. Change the font case for h3 title tags touppercase
-document.querySelectorAll('h3').forEach(
-    title => {title.style.textTransform = 'uppercase'});
+const heading = document.querySelectorAll('h3');
+heading.forEach(
+    title => {title.style.textTransform = 'uppercase';
+});
+heading[1].style.marginTop = '30px';
 
 //4. Add one more fruit to the fruits list
 const fruit = document.createElement('li');
@@ -35,7 +40,15 @@ const vegImg = document.createElement('img');
 vegImg.src = 'https://i.pinimg.com/736x/23/c3/f4/23c3f4ddf10f07fea7c7e84821e96dfb.jpg';
 veg.append(vegImg);
 
+vegImg.addEventListener('mouseover', function(e){
+    e.currentTarget.src = 'https://i.pinimg.com/736x/70/63/37/7063374b02ff6c64505cd6a18b66d7e4.jpg'
+})
+vegImg.addEventListener('mouseleave', function(e) {
+    e.currentTarget.src = 'https://i.pinimg.com/736x/23/c3/f4/23c3f4ddf10f07fea7c7e84821e96dfb.jpg'
+});
+
 //Additional styling
+document.getElementById('text').style.fontWeight = 'bold';
 document.body.style.justifyItems = 'center';
 document.body.style.lineHeight = 3;
 const list = document.getElementsByClassName('list');
@@ -71,3 +84,26 @@ document.getElementById('watermelons').addEventListener('mouseleave', function(e
     e.currentTarget.src = 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQlJnr1Oi8QArKjMXdoJRI8RXPTYOBAvj0donSDtkYtwyRJyz-'
 });
 
+document.getElementById('onions').addEventListener('mouseover', function(e) {
+    e.currentTarget.src = 'https://i.pinimg.com/736x/d0/82/10/d08210a070514e5ba891da7b1962bdea.jpg';
+});
+
+document.getElementById('onions').addEventListener('mouseleave', function(e) {
+    e.currentTarget.src = 'https://i.pinimg.com/736x/26/63/96/266396671091cf9e6ae643e441bb7196.jpg';
+});
+
+document.getElementById('tomatoes').addEventListener('mouseover', function(e) {
+    e.currentTarget.src = 'https://i.pinimg.com/736x/b4/19/99/b41999166a046f3991c99d90e00d05f9.jpg';
+});
+
+document.getElementById('tomatoes').addEventListener('mouseleave', function(e) {
+    e.currentTarget.src = 'https://i.pinimg.com/736x/3c/2c/39/3c2c393f3d81b3f6c7e10d82d9e5529c.jpg';
+});
+
+document.getElementById('kales').addEventListener('mouseover', function(e) {
+    e.currentTarget.src = 'https://i.pinimg.com/736x/70/e3/9c/70e39c9c3a70d39089af106f2c1e64de.jpg';
+});
+
+document.getElementById('kales').addEventListener('mouseleave', function(e) {
+    e.currentTarget.src = 'https://i.pinimg.com/736x/36/ff/bc/36ffbc25fe8168e37e7e7bd237516856.jpg';
+});
