@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 3px 4px 6px 3px white;
+}
+
+#fruList, #vegList{
+    display: flex;
+    justify-content: space-evenly;
+    gap:50px;
+}
